@@ -20,11 +20,15 @@ class Theme_tache(db.Model):
 class Tache(db.Model):
     __tablename__ = "Tache"
     id = db.Column(db.Integer, primary_key= True)
-    description = db.Column(db.String(500), nullable = False)
     theme_key = db.Column(db.Integer, db.ForeignKey("Theme_tache.id"))
+    description = db.Column(db.String(500), nullable = False)
+    priorite = db.Column(db.Integer)
     
-    def __init__(self, description) -> None:
+    
+    def __init__(self, description,prirorite=0) -> None:
+        print(prirorite)
         self.description = description
+        self.priorite = prirorite
     def __str__(self) -> str:
         return self.description
     
@@ -34,7 +38,9 @@ def init_db():
     theme_init = Theme_tache("Defaut")
     db.session.add(theme_init)
     db.session.commit()
+    
     tache_init = Tache("Bonjour ici nous sommes a l'initialisation de la tache")
+    print("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii")
     tache_init.theme_key = theme_init.id
     db.session.add(tache_init)
     db.session.commit()

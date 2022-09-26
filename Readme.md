@@ -5,8 +5,8 @@
 - [x] Installer l'environement (Test du fonctionnement du serveur)
 - [x] Faire les modeles
 - [x] Tester la connection avec la basse de donnée
-- [x] Créer les fonctions de CRUD
-- [ ] Tester les fonction de CRUD
+- [x] Créer les fonctions de CRUD    
+- [ ] Tester les fonction de CRUD  (C = ✅, R = ❌ , U = ✅, D = ✅ )
 - [ ] Faire les templates
 - [ ] Concevor les routes
 
