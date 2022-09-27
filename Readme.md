@@ -6,9 +6,9 @@
 - [x] Faire les modeles
 - [x] Tester la connection avec la basse de donnée
 - [x] Créer les fonctions de CRUD    
-- [ ] Tester les fonction de CRUD  (C = ✅, R = ❌ , U = ✅, D = ✅ )
-- [ ] Faire les templates
+- [x] Tester les fonction de CRUD  (C = ✅, R = ✅ , U = ✅, D = ✅ )
 - [ ] Concevor les routes
+- [ ] Faire les templates
 
 
 ## Description de la la ToDo liste
